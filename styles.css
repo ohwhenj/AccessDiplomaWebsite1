@@ -1,0 +1,197 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Style the header */
+.header{
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Row test */
+.home .row{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+
+
+/* this will create three/four columns that float next to each other*/ 
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    border-style: none;
+}
+
+
+
+/*clear the float after column*/
+.row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*style the footer*/
+.footer{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align:center;
+}
+
+/*responsive layout*/
+@media (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #353; 
+}
+
+li{
+    float:left;
+    border-right: 3px solid;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover-{
+    background-color: #333;
+}
+
+li::last-child{
+    border-right: none;
+}
+
+/*Contact Page Styles */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*Style submit Button*/
+input[type=submit]{
+    background-color:#04aa6d;
+    color:#ffffff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+/*style button with a hover*/
+input[type="submit"]:hover{
+    background: color #45a049;
+}
+
+
+.container{
+    border-radius: 5px;
+    /* background color #f2f2f2 */
+    padding:10px;
+    float: center;
+    text-align: center;
+}
+
+/* About Us Page CSS */ 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section{
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: #ffffff;
+}
+
+.container::after,.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title{
+    color:#808080 
+}
+
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover
+{
+    background-color: #555555;
+}
+
+
+a.menu:hover{
+    background-color: #ffff00;
+    font-size: 20px;
+}
+
+.footer-text-left
+{
+    font-size: 25px;
+    padding-left: 40px;
+    float:left;
+    word-spacing: 20px;
+}
+
+.footer-content-right
+{
+    padding-right:40px;
+    margin-top:20px;
+    float:right;
+}
+
+.icon-style {
+    height:40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.icon-style:hover{
+    background-color: #ffff00;
+    padding:5px;
+}
+a:link{
+    text-decoration: none;
+}
